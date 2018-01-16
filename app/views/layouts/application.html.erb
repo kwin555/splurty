@@ -33,9 +33,22 @@
     <hr />
 
     <br class = "clear" />
-    
+  <div class = "container">
     <%= yield %>
+  </div>
 
+  <div class = "footer">
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-6">
+          <%= link_to "This isn't enough, I need more", "#", class: "next-quote" %>
+        </div>
+        <div class = "col-6 footer-blurb">
+        Proundly built in Houston, TX by <a href = "http://kevinnguyen.getforge.io/"> Kevin Nguyen</a><br /> Want to follow my jouney to becoming a software engineer - <a href="https://medium.com/@kevinnguyen_26044">Follow my medium blog to see my milestones</a>
+
+      </div>
+    </div>
+  </div>
 
   </body>
 </html>
