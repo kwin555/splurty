@@ -5,11 +5,12 @@
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
-    <header class = "row">
-      <div class = "col-3">
+    <header class= "row">
+      <div class= "col-3">
         <%= link_to root_path, class:'logo' do %>
           <div class="circle">
            <br />
@@ -22,10 +23,10 @@
           <% end %>
       </div>
 
-      <div class = "col col-sm-4 hidden-xs-down  slogan">
+      <div class= "col col-sm-4 hidden-xs-down  slogan">
         Giving out random facts about the City of Houston since 2018.
       </div>
-      <div class = "col-10 offset-1 offset-sm-0 col-sm-5 links">
+      <div class= "col-10 offset-1 offset-sm-0 col-sm-5 links">
       <!-- Button trigger modal -->
         <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
         &nbsp;&nbsp;
@@ -62,8 +63,8 @@
 
     <hr />
 
-    <br class = "clear" />
-  <div class = "container">
+    <br class= "clear" />
+  <div class= "container">
     <% if flash[:error].present? %>
       <div class ="col-10 offset-1 alert alert-danger">
         <%= flash[:error].html_safe %>
@@ -72,13 +73,13 @@
     <%= yield %>
   </div>
 
-  <div class = "footer">
-    <div class = "container">
-      <div class = "row">
-        <div class = "col-12 col-sm-6">
+  <div class= "footer">
+    <div class= "container">
+      <div class= "row">
+        <div class= "col-12 col-sm-6">
           <%= link_to "This isn't enough, I need more", root_path, class: "next-quote" %>
         </div>
-        <div class = "col-12 col-sm-6 footer-blurb">
+        <div class= "col-12 col-sm-6 footer-blurb">
         Proudly built in Houston, TX by <a href = "http://kevinnguyen.getforge.io/"> Kevin Nguyen</a><br /> Want to follow my jouney to becoming a software engineer - <a href="https://medium.com/@kevinnguyen_26044">Follow my medium blog to see my milestones</a>
 
       </div>
